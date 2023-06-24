@@ -1,0 +1,71 @@
+body{
+    background: linear-gradient(to bottom left, rgb(236, 166, 236),rgb(238, 238, 152));
+    height: 100vh;
+    overflow: hidden;
+}
+#logo{
+    /* display: flex; */
+    position:absolute;
+    margin-left: 620px;
+    margin-top: 10px;
+    height: 70px;
+    width: 200px;
+    border-radius: 5px;
+    /* box-shadow: 0 0 10px 0  pink; */
+    /* font-family: 'Caveat', cursive;
+    font-family: 'Moirai One', cursive; */
+}
+
+    /* font-family: 'Caveat', cursive;
+    font-family: 'Moirai One', cursive; */
+
+/* #result{
+    text-align: center;
+    position: absolute;
+    margin-left: 900px;
+    margin-top: 200px;
+    width: 400px;
+    height: 120px;
+    background:linear-gradient(to bottom , yellow , white);
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 black;
+} */
+#main{
+    position: absolute;
+    display: flex;
+    height:90%;
+    width: 95%;
+    margin-left: 35px;
+    margin-top: 39px;
+    border-radius: 15% 0 15% 0;
+    box-shadow: 0 0 9px 0 black;
+    /* background-color: white; */
+    background:linear-gradient(to bottom left, rgb(160, 233, 233) , rgb(163, 163, 243));
+}
+
+.cell{
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 1px solid black;
+    font-size: 50px;
+    height: 130px;
+    width: 130px;
+    font-weight: 500;
+
+}
+#board{
+    position: absolute; /* nearest */
+    margin-left: 250px;
+    margin-top: 180px;
+    display: grid;
+    grid-template-columns: repeat(3,133px);
+    width:400px;
+    height: 400px;
+    background: linear-gradient(to bottom , rgb(240, 240, 68), white);
+    
+
+    
+}

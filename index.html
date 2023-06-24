@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Moirai+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="main">
+        <img id="logo"  src="./logo.png" alt="Tic tac toe">
+        
+        <div id="result">
+            
+        </div>
+        <div id="board">
+            <div class="cell" onclick="move(0,0)"></div>
+            <div class="cell" onclick="move(0,1)"></div>
+            <div class="cell" onclick="move(0,2)"></div>
+
+            <div class="cell" onclick="move(1,0)"></div>
+            <div class="cell" onclick="move(1,1)"></div>
+            <div class="cell" onclick="move(1,2)"></div>
+
+            <div class="cell" onclick="move(2,0)"></div>
+            <div class="cell" onclick="move(2,1)"></div>
+            <div class="cell" onclick="move(2,2)"></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
