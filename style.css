@@ -69,3 +69,17 @@ body{
 
     
 }
+
+
+@media screen and (max-width:400px)
+{
+    #main{
+        height: 600px;
+        width: 400px;
+    }
+    #board{
+        height: 400px;
+        width: 400px;
+        background-color: aqua;
+    }
+}
