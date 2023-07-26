@@ -64,6 +64,7 @@ a {
 a:hover {
     color: midnightblue; 
     background-color: white;
+    
 }
 
 /* Media Queries */
@@ -79,13 +80,13 @@ a:hover {
         height: 50vh;
         margin: 0 auto;
         background: linear-gradient(to bottom, rgb(240, 240, 68), white);
-        grid-template-columns: repeat(3, 1fr); /* 3 columns with equal fractions */
-        grid-template-rows: repeat(3, 1fr); /* 3 rows with equal fractions */
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(3, 1fr); 
     }
     .cell {
         border: 1px solid black;
         width: 90px;
-        height: 90px; /* Set equal height for each cell */
+        height: 90px; 
         display: flex;
         justify-content: center;
         align-items: center;
