@@ -3,21 +3,6 @@ body{
     height: 100vh;
     overflow: hidden;
 }
-#logo{
-    /* display: flex; */
-    position:absolute;
-    margin-left: 620px;
-    margin-top: 10px;
-    height: 70px;
-    width: 200px;
-    border-radius: 5px;
-    /* box-shadow: 0 0 10px 0  pink; */
-    /* font-family: 'Caveat', cursive;
-    font-family: 'Moirai One', cursive; */
-}
-
-    /* font-family: 'Caveat', cursive;
-    font-family: 'Moirai One', cursive; */
 
 /* #result{
     text-align: center;
@@ -31,20 +16,20 @@ body{
     box-shadow: 0 0 5px 0 black;
 } */
 #main{
-    position: absolute;
+    position: relative;
     display: flex;
     height:90%;
     width: 95%;
     margin-left: 35px;
     margin-top: 39px;
-    border-radius: 15% 0 15% 0;
+    border-radius: 20% 0 20% 0;
     box-shadow: 0 0 9px 0 black;
     /* background-color: white; */
     background:linear-gradient(to bottom left, rgb(160, 233, 233) , rgb(163, 163, 243));
 }
 
 .cell{
-
+    /* position:absolute; */
     display: flex;
     justify-content: center;
     text-align: center;
@@ -71,15 +56,52 @@ body{
 }
 
 
-@media screen and (max-width:400px)
-{
-    #main{
-        height: 600px;
-        width: 400px;
+/* Media Queries */
+
+/* For mobile screens */
+@media screen and (max-width: 600px) {
+    #main {
+        height: 100vh;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 10px;
+        border-radius: 40px;
     }
-    #board{
+
+    #board {
+        margin-left: 2.5%;
+        margin-top: 150px;
+        width: 95%;
+        height: 50vh;
+    }
+    .cell{
+        /* position: relative; */
+        /* margin-left: 2.5%;
+        margin-top: 90px; */
+        border: 1px solid black;
+        width:90;
+        margin:0;
+        height: 100%;
+        
+    }
+
+
+}
+
+/* For laptops and larger screens */
+@media screen and (min-width: 601px) {
+    #main {
+        height: 90%;
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 39px;
+    }
+
+    #board {
+        margin-left: 250px;
+        margin-top: 180px;
+        width: 400px;
         height: 400px;
-        width: 400px;
-        background-color: aqua;
     }
+
 }
